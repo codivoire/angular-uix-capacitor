@@ -1,0 +1,82 @@
+<uix-page>
+  <uix-navbar>
+    <uix-navbar-left>
+      <a uix-panel-left-open class="link icon-only">
+        <i class="icon-ios-menu ios-only"></i>
+        <i class="icon-md-menu md-only"></i>
+      </a>
+    </uix-navbar-left>
+    <uix-navbar-title>
+      <span>{{ title }}</span>
+    </uix-navbar-title>
+    <uix-navbar-right>
+      <a routerLink="/about" class="link icon-only">
+        <i class="icon-ios-information-circle-outline ios-only"></i>
+        <i class="icon-md-information-circle-outline md-only"></i>
+      </a>
+    </uix-navbar-right>
+  </uix-navbar>
+  <uix-page-content>
+    <uix-block-title>Welcome to my awesome app</uix-block-title>
+    <uix-block strong>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        obcaecati itaque ad iste numquam, sapiente doloribus corporis! Et
+        dolores esse, culpa neque nihil aspernatur nisi hic veniam, quae
+        consequatur dolorum.
+      </p>
+    </uix-block>
+
+    <uix-block-title>Navigation</uix-block-title>
+    <div class="list">
+      <ul>
+        <li>
+          <a routerLink="/about" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">About</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/setting" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">Settings</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <uix-block-title>Components</uix-block-title>
+    <div class="list">
+      <ul>
+        <li>
+          <a (click)="dialog()" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">Dialog</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a (click)="preload()" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">Loader</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <uix-block strong>
+      <p>
+        {{ 'Lorem ipsum dolor sit amet' | truncate:9 }}
+      </p>
+      <p>
+        <uix-link href="/about">About</uix-link>
+      </p>
+      <p>
+        <uix-link href="https://www.youtube.com" external>Youtube</uix-link>
+      </p>
+    </uix-block>
+  </uix-page-content>
+</uix-page>
